@@ -2,28 +2,20 @@ html {
   box-sizing: border-box;
 }
 
-body {
+body,
+li,
+ul {
   font-family: Roboto, sans-serif;
+  margin: 0;
 
   --blue-color: #00acdc;
-}
-
-ul,
-li,
-body,
-a,
-img,
-nav,
-div {
-  margin: 0;
-  padding: 0;
 }
 
 li {
   list-style: none;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   max-width: 1200px;
@@ -36,6 +28,7 @@ header {
 
 .header-nav-list {
   display: flex;
+  padding: 0;
 }
 
 .header-nav-list .item {
@@ -79,21 +72,21 @@ header {
 }
 
 @media (min-width: 1200px) {
-  header {
+  .header {
     display: flex;
     justify-content: space-between;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
-  header {
+  .header {
     display: flex;
     justify-content: space-between;
   }
 }
 
 @media (max-width: 1024px) {
-  header {
+  .header {
     display: flex;
     justify-content: space-between;
   }
